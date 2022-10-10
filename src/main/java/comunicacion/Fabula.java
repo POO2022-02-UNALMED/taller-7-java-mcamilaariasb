@@ -23,17 +23,14 @@ public class Fabula extends Escrito {
     }
     @Override
     public int palabrasTotales(int palabrasPagina) {
-        // TODO Auto-generated method stub
-        return 0;
+        return super.getPaginas()*palabrasPagina*1;
     }
     @Override
     public String interpretacion() {
-        // TODO Auto-generated method stub
-        return interpretacion;
+        return this.interpretacion;
     }
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.getOrigen()+"\n"+this.getTitulo()+"\n"+this.getAutor()+"\n"+this.getPaginas()+"\n"+this.ensenanza;
     }
 }

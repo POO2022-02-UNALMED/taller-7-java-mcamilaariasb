@@ -41,16 +41,14 @@ public class Libro extends Escrito{
   
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.getOrigen()+"\n"+this.getTitulo()+"\n"+this.getAutor()+"\n"+this.getPaginas()+"\n"+this.co_autor+"\n"+this.editorial+"\n"+this.edicion;
     }
     @Override
     public String interpretacion() {
-        return interpretacion;
+        return this.interpretacion;
     }
     @Override
     public int palabrasTotales(int palabrasPagina) {
-        // TODO Auto-generated method stub
-        return 0;
+        return super.getPaginas()*palabrasPagina*2;
     }
 }

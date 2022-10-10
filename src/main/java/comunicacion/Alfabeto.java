@@ -33,8 +33,7 @@ public class Alfabeto extends Pictograma {
     }
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return null;
+        return letras.toString();
     }
 
     
