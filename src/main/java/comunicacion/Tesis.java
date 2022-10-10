@@ -23,8 +23,8 @@ public class Tesis extends Escrito{
     public void setIdea(String idea) {
         this.idea = idea;
     }
-    public static ArrayList<String> getArgumentos() {
-        return argumentos;
+    public static int getArgumentos() {
+        return ((CharSequence) argumentos).length();
     }
     public static void setArgumentos(ArrayList<String> argumentos) {
         Tesis.argumentos = argumentos;

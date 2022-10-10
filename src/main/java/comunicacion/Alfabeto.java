@@ -24,7 +24,7 @@ public class Alfabeto extends Pictograma {
         this.interpretacion = interpretacion;
     }
     public int cantidadLetras(){
-        return 0;
+        return letras.size();
         
     }
     @Override
@@ -33,8 +33,7 @@ public class Alfabeto extends Pictograma {
     }
     @Override
     public String toString() {
-        return letras.toString();
+        return this.getOrigen()+"\n"+Alfabeto.letras;
     }
+}  
 
-    
-}
