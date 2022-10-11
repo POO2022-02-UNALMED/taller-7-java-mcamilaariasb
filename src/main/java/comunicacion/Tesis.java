@@ -4,15 +4,16 @@ import java.util.ArrayList;
 
 public class Tesis extends Escrito{
     private String idea;
-    private static ArrayList<String> argumentos=new ArrayList<String>();
+    private String[] argumentos;
     private String conclusion;
     private String referencias;
     private String interpretacion;
     
-    public Tesis(String origen, String titulo, String autor, int paginas, String idea, String conclusion,
-            String referencias, String interpretacion) {
+    public Tesis(String origen, String titulo, String autor, int paginas, String idea, String[] argumentos,
+            String conclusion, String referencias, String interpretacion) {
         super(origen, titulo, autor, paginas);
         this.idea = idea;
+        this.argumentos = argumentos;
         this.conclusion = conclusion;
         this.referencias = referencias;
         this.interpretacion = interpretacion;
@@ -23,11 +24,14 @@ public class Tesis extends Escrito{
     public void setIdea(String idea) {
         this.idea = idea;
     }
-    public static int getArgumentos() {
-        return ((CharSequence) argumentos).length();
+    public String[] getArgumentos() {
+        return argumentos;
     }
-    public static void setArgumentos(ArrayList<String> argumentos) {
-        Tesis.argumentos = argumentos;
+    public void setArgumentos(String[] argumentos) {
+        this.argumentos = argumentos;
+    }
+    public int argumentos(){
+        return argumentos.length;
     }
     public String getConclusion() {
         return conclusion;
@@ -59,6 +63,7 @@ public class Tesis extends Escrito{
     public String toString() {
         return this.getOrigen()+"\n"+this.getTitulo()+"\n"+this.getAutor()+"\n"+this.getPaginas()+"\n"+this.idea+"\n"+this.conclusion+"\n"+this.referencias;
     }
+
 
     
     
