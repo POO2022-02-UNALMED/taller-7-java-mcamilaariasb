@@ -1,7 +1,5 @@
 package comunicacion;
 
-import java.util.ArrayList;
-
 public class Tesis extends Escrito{
     private String idea;
     private String[] argumentos;
@@ -61,7 +59,7 @@ public class Tesis extends Escrito{
     }
     @Override
     public String toString() {
-        return this.getOrigen()+"\n"+this.getTitulo()+"\n"+this.getAutor()+"\n"+this.getPaginas()+"\n"+this.idea+"\n"+this.conclusion+"\n"+this.referencias;
+        return this.getOrigen()+"\n"+this.getTitulo()+"\n"+this.getAutor()+"\n"+this.getPaginas()+"\n"+this.idea+"\n"+this.argumentos+"\n"+this.conclusion+"\n"+this.referencias;
     }
 
 
